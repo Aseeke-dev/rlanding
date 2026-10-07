@@ -17,6 +17,8 @@ import {
   Cpu,
   MemoryStick,
   Code,
+  MonitorPlay,
+  QrCode,
 } from "lucide-react";
 
 export default function Home() {
@@ -339,6 +341,74 @@ export default function Home() {
               </p>
               <p>
                 Connect phones, tablets, and laptops over your local Wi-Fi network or mobile hotspot. RoomCast is designed to work off-grid, so you can present even when there is no internet connection.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* =====================================================================
+          NEW SECTION: HOW TO SETUP ROOMCAST
+         ===================================================================== */}
+      <section className="py-16 px-6 relative z-10">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-14">
+            <h2 className="text-3xl md:text-4xl font-extrabold mb-4">
+              How to Setup RoomCast
+            </h2>
+            <p className="text-slate-400 text-lg max-w-2xl mx-auto">
+              Get your local presentation running in less than two minutes. No internet connection required.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Step 1 */}
+            <div className="glass-card p-6 rounded-3xl relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-500 to-blue-500 opacity-50 group-hover:opacity-100 transition-opacity" />
+              <div className="text-6xl font-black text-white/[0.03] absolute -top-2 -right-2 select-none">01</div>
+              <div className="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center mb-6 relative z-10">
+                <Download className="w-6 h-6 text-cyan-400" />
+              </div>
+              <h3 className="text-xl font-bold mb-3">1. Install Host App</h3>
+              <p className="text-slate-400 text-sm leading-relaxed">
+                Download and run the RoomCast executable on your main presentation computer.
+              </p>
+            </div>
+
+            {/* Step 2 */}
+            <div className="glass-card p-6 rounded-3xl relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-indigo-500 opacity-50 group-hover:opacity-100 transition-opacity" />
+              <div className="text-6xl font-black text-white/[0.03] absolute -top-2 -right-2 select-none">02</div>
+              <div className="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center mb-6 relative z-10">
+                <Wifi className="w-6 h-6 text-indigo-400" />
+              </div>
+              <h3 className="text-xl font-bold mb-3">2. Connect to LAN</h3>
+              <p className="text-slate-400 text-sm leading-relaxed">
+                Ensure your computer and your audience's mobile devices are connected to the exact same Wi-Fi router or Mobile Hotspot.
+              </p>
+            </div>
+            {/* Step 3 */}
+            <div className="glass-card p-6 rounded-3xl relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-pink-500 opacity-50 group-hover:opacity-100 transition-opacity" />
+              <div className="text-6xl font-black text-white/[0.03] absolute -top-2 -right-2 select-none">03</div>
+              <div className="w-12 h-12 rounded-xl bg-pink-500/10 border border-pink-500/30 flex items-center justify-center mb-6 relative z-10">
+                <QrCode className="w-6 h-6 text-pink-400" />
+              </div>
+              <h3 className="text-xl font-bold mb-3">3. Audience Joins</h3>
+              <p className="text-slate-400 text-sm leading-relaxed">
+                Audience members simply scan the QR code on your screen to instantly view the live stream in their browser.
+              </p>
+            </div>
+
+            {/* Step 4 */}
+            <div className="glass-card p-6 rounded-3xl relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-500 to-purple-500 opacity-50 group-hover:opacity-100 transition-opacity" />
+              <div className="text-6xl font-black text-white/[0.03] absolute -top-2 -right-2 select-none">04</div>
+              <div className="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center mb-6 relative z-10">
+                <MonitorPlay className="w-6 h-6 text-purple-400" />
+              </div>
+              <h3 className="text-xl font-bold mb-3">4. Start Broadcast</h3>
+              <p className="text-slate-400 text-sm leading-relaxed">
+                Select the screen or specific window you want to share, toggle system audio if needed, and click "Start Live Broadcast".
               </p>
             </div>
           </div>
